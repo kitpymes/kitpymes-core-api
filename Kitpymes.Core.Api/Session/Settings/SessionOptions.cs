@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------
+// <copyright file="SessionOptions.cs" company="Kitpymes">
+// Copyright (c) Kitpymes. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Kitpymes.Core.Api.ApiSession.Settings;
+
+using Kitpymes.Core.Api.ApiSession;
+using System.Linq;
+
+/*
+   Clase de configuración SessionOptions
+   Contiene las propiedades para la configuración de la sesión
+*/
+
+/// <summary>
+/// Clase de configuración <c>SessionOptions</c>.
+/// Contiene las propiedades para la configuración de la sesión.
+/// </summary>
+/// <remarks>
+/// <para>En esta clase se pueden agregar todas las propiedades para la configuración de la sesión.</para>
+/// </remarks>
+public class SessionOptions
+{
+    /// <summary>
+    /// Obtiene la configuración de la sesión.
+    /// </summary>
+    public SessionSettings? SessionSettings { get; private set; }
+
+    /// <summary>
+    /// Obtiene o establece un valor que indica el servicio esta habilitado.
+    /// </summary>
+    /// <param name="enabled">Habilita o desabilita.</param>
+    /// <returns>SessionOptions.</returns>
+    public SessionOptions WithEnabled(bool enabled = true)
+    {
+        SessionSettings ??= new SessionSettings();
+
+        SessionSettings.Enabled = enabled;
+
+        return this;
+    }
+
+    /// <summary>
+    /// Obtiene o establece un valor que indica la clave de la aplicación.
+    /// </summary>
+    /// <param name="key">Clave de la aplicación.</param>
+    /// <returns>SessionOptions.</returns>
+    public SessionOptions WithKey(string key)
+    {
+        SessionSettings ??= new SessionSettings();
+
+        SessionSettings.Key = key;
+
+        return this;
+    }
+
+    /// <summary>
+    /// Obtiene o establece un valor que indica el ambiente de ejecución.
+    /// </summary>
+    /// <param name="isDevelopment">Si es el ambiente de desarrollo.</param>
+    /// <returns>SessionOptions.</returns>
+    public SessionOptions WithIsDevelopment(bool isDevelopment = true)
+    {
+        SessionSettings ??= new SessionSettings();
+
+        SessionSettings.IsDevelopment = isDevelopment;
+
+        return this;
+    }
+
+    /// <summary>
+    /// Obtiene o establece un valor que indica si la aplicación acepta inquilinos.
+    /// </summary>
+    /// <param name="isMultitenancy">Si es multi tenant.</param>
+    /// <returns>SessionOptions.</returns>
+    public SessionOptions WithMultitenancy(bool isMultitenancy = true)
+    {
+        SessionSettings ??= new SessionSettings();
+
+        SessionSettings.IsMultitenancy = isMultitenancy;
+
+        return this;
+    }
+
+    /// <summary>
+    /// Para agregar inquilinos.
+    /// </summary>
+    /// <param name="tenants">Nuevos inquilinos.</param>
+    /// <returns>SessionOptions.</returns>
+    public SessionOptions WithTenants(params TenantSession[] tenants)
+    {
+        SessionSettings??= new SessionSettings();
+
+        SessionSettings.Tenants??=[];
+
+        SessionSettings.Tenants.AddRange(tenants.ToList());
+
+        return this;
+    }
+}

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(SolutionDir)docs/props/Common.Build.props" Condition="Exists('$(SolutionDir)docs/props/Common.Build.props')" />
+  <Import Project="$(SolutionDir)docs/props/Pack.Build.props" Condition="Exists('$(SolutionDir)docs/props/Pack.Build.props')" />
+  
+    <!-- TODO: REEMPLAZAR POR NUGET -->
+  <ItemGroup>
+    <Reference Include="Kitpymes.Core.Shared">
+      <HintPath>..\..\kitpymes-core-shared\Kitpymes.Core.Shared\bin\Debug\net8.0\Kitpymes.Core.Shared.dll</HintPath>
+    </Reference>
+  
+    <Reference Include="Kitpymes.Core.Entities">
+      <HintPath>..\..\kitpymes-core-entities\Kitpymes.Core.Entities\bin\Debug\net8.0\Kitpymes.Core.Entities.dll</HintPath>
+    </Reference>
+  
+    <Reference Include="Kitpymes.Core.Results">
+      <HintPath>..\..\kitpymes-core-results\Kitpymes.Core.Results\bin\Debug\net8.0\Kitpymes.Core.Results.dll</HintPath>
+    </Reference>
+  
+    <Reference Include="Kitpymes.Core.Logger">
+      <HintPath>..\..\kitpymes-core-logger\Kitpymes.Core.Logger\bin\Debug\net8.0\Kitpymes.Core.Logger.dll</HintPath>
+    </Reference>
+  
+    <Reference Include="Kitpymes.Core.Logger.Abstractions">
+      <HintPath>..\..\kitpymes-core-logger\Kitpymes.Core.Logger.Abstractions\bin\Debug\net8.0\Kitpymes.Core.Logger.Abstractions.dll</HintPath>
+    </Reference>
+  
+    <Reference Include="Kitpymes.Core.Logger.Serilog">
+      <HintPath>..\..\kitpymes-core-logger\Kitpymes.Core.Logger.Serilog\bin\Debug\net8.0\Kitpymes.Core.Logger.Serilog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="YamlDotNet" Version="12.3.1" />
+  </ItemGroup>
+
+</Project>

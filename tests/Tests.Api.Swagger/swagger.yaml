@@ -1,0 +1,3111 @@
+info:
+  title: 
+  description: 
+  version: 1.0
+  termsOfService: 
+  contact:
+    name: 
+    url: 
+    email: 
+  license:
+    name: MIT
+    url: &o0
+      absolutePath: /licenses/MIT
+      absoluteUri: *o0
+      localPath: /licenses/MIT
+      authority: opensource.org
+      hostNameType: Dns
+      isDefaultPort: true
+      isFile: false
+      isLoopback: false
+      pathAndQuery: /licenses/MIT
+      segments:
+      - /
+      - licenses/
+      - MIT
+      isUnc: false
+      host: opensource.org
+      port: 443
+      query: ''
+      fragment: ''
+      scheme: https
+      originalString: *o0
+      dnsSafeHost: opensource.org
+      idnHost: opensource.org
+      isAbsoluteUri: true
+      userEscaped: false
+      userInfo: ''
+servers: []
+paths:
+  /api/Values:
+    summary: 
+    description: 
+    operations:
+      Get:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: GET api/values
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns list of products
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: array
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items:
+                    title: 
+                    type: 
+                    format: 
+                    description: 
+                    maximum: 
+                    exclusiveMaximum: 
+                    minimum: 
+                    exclusiveMinimum: 
+                    maxLength: 
+                    minLength: 
+                    pattern: 
+                    multipleOf: 
+                    default: 
+                    readOnly: false
+                    writeOnly: false
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    not: 
+                    required: []
+                    items: 
+                    maxItems: 
+                    minItems: 
+                    uniqueItems: 
+                    properties: {}
+                    maxProperties: 
+                    minProperties: 
+                    additionalPropertiesAllowed: true
+                    additionalProperties: 
+                    discriminator: 
+                    example: 
+                    enum: []
+                    nullable: false
+                    externalDocs: 
+                    deprecated: false
+                    xml: 
+                    unresolvedReference: false
+                    reference:
+                      externalResource: 
+                      type: Schema
+                      id: Product
+                      isExternal: false
+                      isLocal: true
+                      referenceV3: '#/components/schemas/Product'
+                      referenceV2: '#/definitions/Product'
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Post:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: POST api/values
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody:
+          unresolvedReference: false
+          reference: 
+          description: '[FromBody] Product'
+          required: false
+          content:
+            application/json:
+              schema: &o1
+                title: 
+                type: 
+                format: 
+                description: 
+                maximum: 
+                exclusiveMaximum: 
+                minimum: 
+                exclusiveMinimum: 
+                maxLength: 
+                minLength: 
+                pattern: 
+                multipleOf: 
+                default: 
+                readOnly: false
+                writeOnly: false
+                allOf: []
+                oneOf: []
+                anyOf: []
+                not: 
+                required: []
+                items: 
+                maxItems: 
+                minItems: 
+                uniqueItems: 
+                properties: {}
+                maxProperties: 
+                minProperties: 
+                additionalPropertiesAllowed: true
+                additionalProperties: 
+                discriminator: 
+                example: 
+                enum: []
+                nullable: false
+                externalDocs: 
+                deprecated: false
+                xml: 
+                unresolvedReference: false
+                reference:
+                  externalResource: 
+                  type: Schema
+                  id: AddProductModel
+                  isExternal: false
+                  isLocal: true
+                  referenceV3: '#/components/schemas/AddProductModel'
+                  referenceV2: '#/definitions/AddProductModel'
+              example: 
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o1
+              example: 
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o1
+              example: 
+              examples: {}
+              encoding: {}
+        responses:
+          200:
+            description: Returns product created
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v{version}/Values:
+    summary: 
+    description: 
+    operations:
+      Get:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: GET api/values
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: version
+          in: Path
+          description: 
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns list of products
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: array
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items:
+                    title: 
+                    type: 
+                    format: 
+                    description: 
+                    maximum: 
+                    exclusiveMaximum: 
+                    minimum: 
+                    exclusiveMinimum: 
+                    maxLength: 
+                    minLength: 
+                    pattern: 
+                    multipleOf: 
+                    default: 
+                    readOnly: false
+                    writeOnly: false
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    not: 
+                    required: []
+                    items: 
+                    maxItems: 
+                    minItems: 
+                    uniqueItems: 
+                    properties: {}
+                    maxProperties: 
+                    minProperties: 
+                    additionalPropertiesAllowed: true
+                    additionalProperties: 
+                    discriminator: 
+                    example: 
+                    enum: []
+                    nullable: false
+                    externalDocs: 
+                    deprecated: false
+                    xml: 
+                    unresolvedReference: false
+                    reference:
+                      externalResource: 
+                      type: Schema
+                      id: Product
+                      isExternal: false
+                      isLocal: true
+                      referenceV3: '#/components/schemas/Product'
+                      referenceV2: '#/definitions/Product'
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Post:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: POST api/values
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: version
+          in: Path
+          description: 
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody:
+          unresolvedReference: false
+          reference: 
+          description: '[FromBody] Product'
+          required: false
+          content:
+            application/json:
+              schema: &o2
+                title: 
+                type: 
+                format: 
+                description: 
+                maximum: 
+                exclusiveMaximum: 
+                minimum: 
+                exclusiveMinimum: 
+                maxLength: 
+                minLength: 
+                pattern: 
+                multipleOf: 
+                default: 
+                readOnly: false
+                writeOnly: false
+                allOf: []
+                oneOf: []
+                anyOf: []
+                not: 
+                required: []
+                items: 
+                maxItems: 
+                minItems: 
+                uniqueItems: 
+                properties: {}
+                maxProperties: 
+                minProperties: 
+                additionalPropertiesAllowed: true
+                additionalProperties: 
+                discriminator: 
+                example: 
+                enum: []
+                nullable: false
+                externalDocs: 
+                deprecated: false
+                xml: 
+                unresolvedReference: false
+                reference:
+                  externalResource: 
+                  type: Schema
+                  id: AddProductModel
+                  isExternal: false
+                  isLocal: true
+                  referenceV3: '#/components/schemas/AddProductModel'
+                  referenceV2: '#/definitions/AddProductModel'
+              example: 
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o2
+              example: 
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o2
+              example: 
+              examples: {}
+              encoding: {}
+        responses:
+          200:
+            description: Returns product created
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/Values/{id}:
+    summary: 
+    description: 
+    operations:
+      Get:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: >-
+          GET api/values/5
+
+          here id is 5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns product
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Put:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: PUT api/values/5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody:
+          unresolvedReference: false
+          reference: 
+          description: '[FromBody] Product'
+          required: false
+          content:
+            application/json:
+              schema: &o3
+                title: 
+                type: 
+                format: 
+                description: 
+                maximum: 
+                exclusiveMaximum: 
+                minimum: 
+                exclusiveMinimum: 
+                maxLength: 
+                minLength: 
+                pattern: 
+                multipleOf: 
+                default: 
+                readOnly: false
+                writeOnly: false
+                allOf: []
+                oneOf: []
+                anyOf: []
+                not: 
+                required: []
+                items: 
+                maxItems: 
+                minItems: 
+                uniqueItems: 
+                properties: {}
+                maxProperties: 
+                minProperties: 
+                additionalPropertiesAllowed: true
+                additionalProperties: 
+                discriminator: 
+                example: 
+                enum: []
+                nullable: false
+                externalDocs: 
+                deprecated: false
+                xml: 
+                unresolvedReference: false
+                reference:
+                  externalResource: 
+                  type: Schema
+                  id: EditProductModel
+                  isExternal: false
+                  isLocal: true
+                  referenceV3: '#/components/schemas/EditProductModel'
+                  referenceV2: '#/definitions/EditProductModel'
+              example: 
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o3
+              example: 
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o3
+              example: 
+              examples: {}
+              encoding: {}
+        responses:
+          200:
+            description: Returns product updated
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Delete:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: DELETE api/values/5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns true si product sucesss deleted or false if not deleted
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: boolean
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v{version}/Values/{id}:
+    summary: 
+    description: 
+    operations:
+      Get:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: >-
+          GET api/values/5
+
+          here id is 5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: version
+          in: Path
+          description: 
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns product
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Put:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: PUT api/values/5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: version
+          in: Path
+          description: 
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody:
+          unresolvedReference: false
+          reference: 
+          description: '[FromBody] Product'
+          required: false
+          content:
+            application/json:
+              schema: &o4
+                title: 
+                type: 
+                format: 
+                description: 
+                maximum: 
+                exclusiveMaximum: 
+                minimum: 
+                exclusiveMinimum: 
+                maxLength: 
+                minLength: 
+                pattern: 
+                multipleOf: 
+                default: 
+                readOnly: false
+                writeOnly: false
+                allOf: []
+                oneOf: []
+                anyOf: []
+                not: 
+                required: []
+                items: 
+                maxItems: 
+                minItems: 
+                uniqueItems: 
+                properties: {}
+                maxProperties: 
+                minProperties: 
+                additionalPropertiesAllowed: true
+                additionalProperties: 
+                discriminator: 
+                example: 
+                enum: []
+                nullable: false
+                externalDocs: 
+                deprecated: false
+                xml: 
+                unresolvedReference: false
+                reference:
+                  externalResource: 
+                  type: Schema
+                  id: EditProductModel
+                  isExternal: false
+                  isLocal: true
+                  referenceV3: '#/components/schemas/EditProductModel'
+                  referenceV2: '#/definitions/EditProductModel'
+              example: 
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o4
+              example: 
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o4
+              example: 
+              examples: {}
+              encoding: {}
+        responses:
+          200:
+            description: Returns product updated
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: 
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference:
+                    externalResource: 
+                    type: Schema
+                    id: Product
+                    isExternal: false
+                    isLocal: true
+                    referenceV3: '#/components/schemas/Product'
+                    referenceV2: '#/definitions/Product'
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+      Delete:
+        tags:
+        - name: Values
+          description: 
+          externalDocs: 
+          unresolvedReference: false
+          reference: 
+        summary: DELETE api/values/5
+        description: 
+        externalDocs: 
+        operationId: 
+        parameters:
+        - unresolvedReference: false
+          reference: 
+          name: id
+          in: Path
+          description: int
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: integer
+            format: int32
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: version
+          in: Path
+          description: 
+          required: true
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default: 
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        - unresolvedReference: false
+          reference: 
+          name: api-version
+          in: Header
+          description: The requested API version
+          required: false
+          deprecated: false
+          allowEmptyValue: false
+          style: 
+          explode: false
+          allowReserved: false
+          schema:
+            title: 
+            type: string
+            format: 
+            description: 
+            maximum: 
+            exclusiveMaximum: 
+            minimum: 
+            exclusiveMinimum: 
+            maxLength: 
+            minLength: 
+            pattern: 
+            multipleOf: 
+            default:
+              primitiveType: String
+              anyType: Primitive
+              value: 1.0
+            readOnly: false
+            writeOnly: false
+            allOf: []
+            oneOf: []
+            anyOf: []
+            not: 
+            required: []
+            items: 
+            maxItems: 
+            minItems: 
+            uniqueItems: 
+            properties: {}
+            maxProperties: 
+            minProperties: 
+            additionalPropertiesAllowed: true
+            additionalProperties: 
+            discriminator: 
+            example: 
+            enum: []
+            nullable: false
+            externalDocs: 
+            deprecated: false
+            xml: 
+            unresolvedReference: false
+            reference: 
+          examples: {}
+          example: 
+          content: {}
+        requestBody: 
+        responses:
+          200:
+            description: Returns true si product sucesss deleted or false if not deleted
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: boolean
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          400:
+            description: Noway, just for demonstration
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  title: 
+                  type: string
+                  format: 
+                  description: 
+                  maximum: 
+                  exclusiveMaximum: 
+                  minimum: 
+                  exclusiveMinimum: 
+                  maxLength: 
+                  minLength: 
+                  pattern: 
+                  multipleOf: 
+                  default: 
+                  readOnly: false
+                  writeOnly: false
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  not: 
+                  required: []
+                  items: 
+                  maxItems: 
+                  minItems: 
+                  uniqueItems: 
+                  properties: {}
+                  maxProperties: 
+                  minProperties: 
+                  additionalPropertiesAllowed: true
+                  additionalProperties: 
+                  discriminator: 
+                  example: 
+                  enum: []
+                  nullable: false
+                  externalDocs: 
+                  deprecated: false
+                  xml: 
+                  unresolvedReference: false
+                  reference: 
+                example: 
+                examples: {}
+                encoding: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+          500:
+            description: Ocurrió un error inesperado, intente la operación nuevamente o comuníquese con el administrador del sistema
+            headers: {}
+            content: {}
+            links: {}
+            unresolvedReference: false
+            reference: 
+        callbacks: {}
+        deprecated: false
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+components:
+  schemas:
+    Product:
+      title: 
+      type: object
+      format: 
+      description: Clase de productos.
+      maximum: 
+      exclusiveMaximum: 
+      minimum: 
+      exclusiveMinimum: 
+      maxLength: 
+      minLength: 
+      pattern: 
+      multipleOf: 
+      default: 
+      readOnly: false
+      writeOnly: false
+      allOf: []
+      oneOf: []
+      anyOf: []
+      not: 
+      required: []
+      items: 
+      maxItems: 
+      minItems: 
+      uniqueItems: 
+      properties:
+        id:
+          title: 
+          type: integer
+          format: int32
+          description: The id of the product
+          maximum: 
+          exclusiveMaximum: 
+          minimum: 
+          exclusiveMinimum: 
+          maxLength: 
+          minLength: 
+          pattern: 
+          multipleOf: 
+          default: 
+          readOnly: false
+          writeOnly: false
+          allOf: []
+          oneOf: []
+          anyOf: []
+          not: 
+          required: []
+          items: 
+          maxItems: 
+          minItems: 
+          uniqueItems: 
+          properties: {}
+          maxProperties: 
+          minProperties: 
+          additionalPropertiesAllowed: true
+          additionalProperties: 
+          discriminator: 
+          example:
+            primitiveType: Long
+            anyType: Primitive
+            value: 92929292929
+          enum: []
+          nullable: false
+          externalDocs: 
+          deprecated: false
+          xml: 
+          unresolvedReference: false
+          reference: 
+        name:
+          title: 
+          type: string
+          format: 
+          description: The name of the product
+          maximum: 
+          exclusiveMaximum: 
+          minimum: 
+          exclusiveMinimum: 
+          maxLength: 
+          minLength: 
+          pattern: 
+          multipleOf: 
+          default: 
+          readOnly: false
+          writeOnly: false
+          allOf: []
+          oneOf: []
+          anyOf: []
+          not: 
+          required: []
+          items: 
+          maxItems: 
+          minItems: 
+          uniqueItems: 
+          properties: {}
+          maxProperties: 
+          minProperties: 
+          additionalPropertiesAllowed: true
+          additionalProperties: 
+          discriminator: 
+          example:
+            primitiveType: String
+            anyType: Primitive
+            value: Pan
+          enum: []
+          nullable: true
+          externalDocs: 
+          deprecated: false
+          xml: 
+          unresolvedReference: false
+          reference: 
+        createdDate:
+          title: 
+          type: string
+          format: date-time
+          description: The date created product
+          maximum: 
+          exclusiveMaximum: 
+          minimum: 
+          exclusiveMinimum: 
+          maxLength: 
+          minLength: 
+          pattern: 
+          multipleOf: 
+          default: 
+          readOnly: false
+          writeOnly: false
+          allOf: []
+          oneOf: []
+          anyOf: []
+          not: 
+          required: []
+          items: 
+          maxItems: 
+          minItems: 
+          uniqueItems: 
+          properties: {}
+          maxProperties: 
+          minProperties: 
+          additionalPropertiesAllowed: true
+          additionalProperties: 
+          discriminator: 
+          example:
+            primitiveType: String
+            anyType: Primitive
+            value: Pan
+          enum: []
+          nullable: false
+          externalDocs: 
+          deprecated: false
+          xml: 
+          unresolvedReference: false
+          reference: 
+      maxProperties: 
+      minProperties: 
+      additionalPropertiesAllowed: false
+      additionalProperties: 
+      discriminator: 
+      example: 
+      enum: []
+      nullable: false
+      externalDocs: 
+      deprecated: false
+      xml: 
+      unresolvedReference: false
+      reference: 
+    AddProductModel:
+      title: 
+      type: object
+      format: 
+      description: Modelo para agregar un producto.
+      maximum: 
+      exclusiveMaximum: 
+      minimum: 
+      exclusiveMinimum: 
+      maxLength: 
+      minLength: 
+      pattern: 
+      multipleOf: 
+      default: 
+      readOnly: false
+      writeOnly: false
+      allOf: []
+      oneOf: []
+      anyOf: []
+      not: 
+      required: []
+      items: 
+      maxItems: 
+      minItems: 
+      uniqueItems: 
+      properties:
+        name:
+          title: 
+          type: string
+          format: 
+          description: The name of the product
+          maximum: 
+          exclusiveMaximum: 
+          minimum: 
+          exclusiveMinimum: 
+          maxLength: 
+          minLength: 
+          pattern: 
+          multipleOf: 
+          default: 
+          readOnly: false
+          writeOnly: false
+          allOf: []
+          oneOf: []
+          anyOf: []
+          not: 
+          required: []
+          items: 
+          maxItems: 
+          minItems: 
+          uniqueItems: 
+          properties: {}
+          maxProperties: 
+          minProperties: 
+          additionalPropertiesAllowed: true
+          additionalProperties: 
+          discriminator: 
+          example:
+            primitiveType: String
+            anyType: Primitive
+            value: Pan
+          enum: []
+          nullable: true
+          externalDocs: 
+          deprecated: false
+          xml: 
+          unresolvedReference: false
+          reference: 
+      maxProperties: 
+      minProperties: 
+      additionalPropertiesAllowed: false
+      additionalProperties: 
+      discriminator: 
+      example: 
+      enum: []
+      nullable: false
+      externalDocs: 
+      deprecated: false
+      xml: 
+      unresolvedReference: false
+      reference: 
+    EditProductModel:
+      title: 
+      type: object
+      format: 
+      description: Modelo para editar un producto.
+      maximum: 
+      exclusiveMaximum: 
+      minimum: 
+      exclusiveMinimum: 
+      maxLength: 
+      minLength: 
+      pattern: 
+      multipleOf: 
+      default: 
+      readOnly: false
+      writeOnly: false
+      allOf: []
+      oneOf: []
+      anyOf: []
+      not: 
+      required: []
+      items: 
+      maxItems: 
+      minItems: 
+      uniqueItems: 
+      properties:
+        name:
+          title: 
+          type: string
+          format: 
+          description: The name of the product
+          maximum: 
+          exclusiveMaximum: 
+          minimum: 
+          exclusiveMinimum: 
+          maxLength: 
+          minLength: 
+          pattern: 
+          multipleOf: 
+          default: 
+          readOnly: false
+          writeOnly: false
+          allOf: []
+          oneOf: []
+          anyOf: []
+          not: 
+          required: []
+          items: 
+          maxItems: 
+          minItems: 
+          uniqueItems: 
+          properties: {}
+          maxProperties: 
+          minProperties: 
+          additionalPropertiesAllowed: true
+          additionalProperties: 
+          discriminator: 
+          example:
+            primitiveType: String
+            anyType: Primitive
+            value: Pan
+          enum: []
+          nullable: true
+          externalDocs: 
+          deprecated: false
+          xml: 
+          unresolvedReference: false
+          reference: 
+      maxProperties: 
+      minProperties: 
+      additionalPropertiesAllowed: false
+      additionalProperties: 
+      discriminator: 
+      example: 
+      enum: []
+      nullable: false
+      externalDocs: 
+      deprecated: false
+      xml: 
+      unresolvedReference: false
+      reference: 
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes:
+    Bearer:
+      type: ApiKey
+      description: >-
+        JWT Authorization header using the Bearer scheme. 
+
+         Enter 'Bearer' [space] and then your token in the text input below.
+
+        Example: "Bearer xxxxxxxxxx"
+      name: Authorization
+      in: Header
+      scheme: Bearer
+      bearerFormat: 
+      flows: 
+      openIdConnectUrl: 
+      unresolvedReference: false
+      reference: 
+  links: {}
+  callbacks: {}
+securityRequirements: []
+tags: []
+externalDocs: 
+

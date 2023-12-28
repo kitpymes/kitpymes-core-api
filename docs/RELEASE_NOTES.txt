@@ -1,0 +1,26 @@
+# v.1.0.7
+- Se actualiza la funcionalidad relacionada con la sesión de la aplicación.
+
+# v.1.0.6
+- Se actualizan la clase de inicio de host "InitHost".
+- Se actualizan librerías.
+
+# v.1.0.5
+- Se agrega un nuevo filtro para swagger "SupportedLanguagesFilter" para mostrar los lenguajes soportados.
+- Se agrega un nuevo inicio de host "Build<TStartup>()".
+- Se actualizan librerías.
+
+# v.1.0.4
+- Se migra de la versión netcoreapp3 a net5 y se actualizan librerías.
+
+# v.1.0.3
+- Se agrega el proyecto Result, para devolver resultados de las apis.
+
+# v.1.0.2
+- Se actualiza el proyecto de Host, se remueve "CaptureStartupErrors()" por si ocurre un error al inicio del host, este pueda propagarse y asi poder guardarse en el archivo.
+
+# v.1.0.1
+- Se actualiza el proyecto de Host.
+
+# v.1.0.0
+- Se genera la primera versión del paquete del proyecto.
