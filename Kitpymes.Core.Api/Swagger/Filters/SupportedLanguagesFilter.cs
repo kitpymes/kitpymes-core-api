@@ -26,7 +26,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 public class SupportedLanguagesFilter(IServiceProvider serviceProvider)
     : IOperationFilter
 {
-    private IServiceProvider? ServiceProvider { get; } = serviceProvider;
+    private IServiceProvider? ServiceProvider => serviceProvider;
 
     /// <inheritdoc/>
     public void Apply(OpenApiOperation operation, OperationFilterContext context)

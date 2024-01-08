@@ -7,19 +7,32 @@
 
 namespace Kitpymes.Core.Api.Swagger.Filters;
 
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Kitpymes.Core.Api.Swagger.Extensions;
+using Kitpymes.Core.Api.Swagger.Settings;
 using Kitpymes.Core.Shared.Extensions;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using YamlDotNet.Serialization.Schemas;
 
 /// <summary>
 /// Filtro para la autorización.
 /// </summary>
-public class AuthorizationBearerFilter : IOperationFilter
+/// <remarks>
+/// Inicializa una nueva instancia de la clase <see cref="AuthorizationBearerFilter"/>.
+/// </remarks>
+/// <param name="serviceProvider">Provee un objeto para obtener servicios.</param>
+public class AuthorizationBearerFilter(IServiceProvider serviceProvider)
+    : IOperationFilter
 {
+    private IServiceProvider? ServiceProvider => serviceProvider;
+
     /// <inheritdoc/>
     public void Apply(OpenApiOperation operation, OperationFilterContext context)
     {
@@ -27,9 +40,11 @@ public class AuthorizationBearerFilter : IOperationFilter
 
         if (authorizeAttributes?.Any() == true)
         {
+            var settings = (ServiceProvider?.GetService(typeof(IOptions<SwaggerSettings>)) as IOptions<SwaggerSettings>)?.Value;
+
             var policies = authorizeAttributes.Select(attr => attr.Policy).Distinct().ToList();
 
-            if (!operation.ToIsNullOrEmpty())
+            if (!operation.ToIsNullOrEmpty() && !settings.ToIsNullOrEmpty())
             {
                 operation.Security ??= new List<OpenApiSecurityRequirement>();
 
@@ -38,21 +53,23 @@ public class AuthorizationBearerFilter : IOperationFilter
                     {
                         new OpenApiSecurityScheme
                         {
-                            Name = "JWT Authentication",
+                            BearerFormat = settings.Security.BearerFormat,
 
-                            Scheme = "Bearer",
+                            Name = settings.Security.Name,
 
-                            BearerFormat = "JWT",
+                            Scheme = settings.Security.Scheme,
 
-                            In = ParameterLocation.Header,
+                            In = settings.Security.ParameterLocation.ToEnum(ParameterLocation.Header),
 
-                            Type = SecuritySchemeType.Http,
+                            Type = settings.Security.SecurityType.ToEnum(SecuritySchemeType.ApiKey),
+
+                            Description = settings?.Security.Description,
 
                             Reference = new OpenApiReference
                             {
                                 Type = ReferenceType.SecurityScheme,
 
-                                Id = "Bearer",
+                                Id = settings.Security.Scheme,
                             },
                         },
                         policies

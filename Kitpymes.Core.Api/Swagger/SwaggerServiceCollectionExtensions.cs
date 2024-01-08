@@ -58,7 +58,7 @@ public static class SwaggerServiceCollectionExtensions
 
                    setupAction.IgnoreObsoleteProperties();
 
-                   setupAction.AddSecurityDefinition(settings.Security.Title, GetOpenApiSecurityScheme(settings));
+                   setupAction.AddSecurityDefinition(settings.Security.Scheme, GetOpenApiSecurityScheme(settings));
 
                    var apiVersionDescriptionProvider = services.ToService<IApiVersionDescriptionProvider>();
 

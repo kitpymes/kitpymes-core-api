@@ -5,42 +5,41 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Kitpymes.Core.Api.Swagger.Filters
+namespace Kitpymes.Core.Api.Swagger.Filters;
+
+using System.Linq;
+using Microsoft.OpenApi.Any;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
+
+/// <summary>
+/// Filtro para los valores pode defecto.
+/// </summary>
+public sealed class DefaultValuesFilter : IOperationFilter
 {
-    using System.Linq;
-    using Microsoft.OpenApi.Any;
-    using Microsoft.OpenApi.Models;
-    using Swashbuckle.AspNetCore.SwaggerGen;
-
-    /// <summary>
-    /// Filtro para los valores pode defecto.
-    /// </summary>
-    public sealed class DefaultValuesFilter : IOperationFilter
+    /// <inheritdoc/>
+    public void Apply(OpenApiOperation operation, OperationFilterContext context)
     {
-        /// <inheritdoc/>
-        public void Apply(OpenApiOperation operation, OperationFilterContext context)
+        var parameters = operation?.Parameters?.OfType<OpenApiParameter>();
+
+        if (parameters != null)
         {
-            var parameters = operation?.Parameters?.OfType<OpenApiParameter>();
-
-            if (parameters != null)
+            foreach (var parameter in parameters)
             {
-                foreach (var parameter in parameters)
+                var description = context?.ApiDescription.ParameterDescriptions.FirstOrDefault(p => p.Name == parameter.Name);
+
+                if (description != null)
                 {
-                    var description = context?.ApiDescription.ParameterDescriptions.FirstOrDefault(p => p.Name == parameter.Name);
+                    parameter.Description ??= description.ModelMetadata?.Description;
 
-                    if (description != null)
+                    if (description.RouteInfo != null)
                     {
-                        parameter.Description ??= description.ModelMetadata?.Description;
+                        parameter.Required |= !description.RouteInfo.IsOptional;
+                    }
 
-                        if (description.RouteInfo != null)
-                        {
-                            parameter.Required |= !description.RouteInfo.IsOptional;
-                        }
-
-                        if (description.DefaultValue != null)
-                        {
-                            parameter.Schema.Default ??= new OpenApiString(description.DefaultValue.ToString());
-                        }
+                    if (description.DefaultValue != null)
+                    {
+                        parameter.Schema.Default ??= new OpenApiString(description.DefaultValue.ToString());
                     }
                 }
             }

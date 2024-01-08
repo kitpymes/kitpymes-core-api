@@ -9,6 +9,7 @@ namespace Kitpymes.Core.Api.Swagger.Settings
 {
     using System;
     using Microsoft.OpenApi.Models;
+    using YamlDotNet.Serialization;
 
     /*
        Clase de configuración SwaggerSecuritySettings
@@ -42,7 +43,7 @@ namespace Kitpymes.Core.Api.Swagger.Settings
         /// <summary>
         /// Valor por defecto que indica la descripción del tipo de esquema de seguridad.
         /// </summary>
-        public const string DefaultDescription = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer xxxxxxxxxx\"";
+        public const string DefaultDescription = $"Enter the Bearer Authorization string as following: `{DefaultScheme} Generated-JWT-Token`";
 
         /// <summary>
         /// Valor por defecto que indica la ubicación del parametro a enviar a la api.
@@ -52,7 +53,7 @@ namespace Kitpymes.Core.Api.Swagger.Settings
         /// <summary>
         /// Valor por defecto que indica el tipo de seguridad utilizada.
         /// </summary>
-        public const int DefaultSecurityType = 0;
+        public const int DefaultSecurityType = 1;
 
         private string _title = DefaultTitle;
 
@@ -65,6 +66,11 @@ namespace Kitpymes.Core.Api.Swagger.Settings
         private int _parameterLocation = DefaultParameterLocation;
 
         private int _securityType = DefaultSecurityType;
+
+        /// <summary>
+        /// Obtiene valor por defecto que indica el formato e bearer.
+        /// </summary>
+        public string BearerFormat => "JWT";
 
         /// <summary>
         /// Obtiene o establece un valor que indica el nombre de la definición de seguridad.
