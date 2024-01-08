@@ -65,6 +65,10 @@ public static class ApiSessionServiceCollectionExtensions
     {
         if (sessionSettings?.Enabled == true)
         {
+            ApiSession.Key = sessionSettings.Key;
+
+            ApiSession.IsMultitenancy = sessionSettings.IsMultitenancy == true;
+
             services.AddSingleton(sessionSettings);
         }
 
