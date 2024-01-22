@@ -66,6 +66,7 @@ public static class ApiSessionServiceCollectionExtensions
         if (sessionSettings?.Enabled == true)
         {
             ApiSession.IsMultitenancy = sessionSettings.IsMultitenancy == true;
+            ApiSession.IsDevelopment = services.ToIsDevelopment();
 
             services.AddSingleton(sessionSettings);
         }
