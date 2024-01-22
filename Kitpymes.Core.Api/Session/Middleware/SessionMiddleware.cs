@@ -14,7 +14,6 @@ using Kitpymes.Core.Api.ApiSession;
 using Kitpymes.Core.Api.ApiSession.Settings;
 using Kitpymes.Core.Shared.Extensions;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
 
 /*
     Clase del middlware SessionMiddleware
@@ -34,7 +33,7 @@ using Microsoft.Extensions.DependencyInjection;
 /// <param name="requestDelegate">Una función que puede procesar una solicitud HTTP.</param>
 public class SessionMiddleware(RequestDelegate requestDelegate)
 {
-    private RequestDelegate RequestDelegate { get; } = requestDelegate;
+    private RequestDelegate RequestDelegate => requestDelegate;
 
     /// <summary>
     /// Valida y carga los datos del usuario logueado.
@@ -43,9 +42,11 @@ public class SessionMiddleware(RequestDelegate requestDelegate)
     /// <returns>Task.</returns>
     public async Task InvokeAsync(HttpContext httpContext)
     {
-        var settings = (SessionSettings)httpContext.RequestServices.GetRequiredService(typeof(SessionSettings));
+        var settings = (SessionSettings)httpContext.RequestServices.ToRequiredService(typeof(SessionSettings));
 
-        if (settings is not null && settings.IsMultitenancy == true)
+        ApiSession.IsDevelopment = httpContext.RequestServices.ToIsDevelopment();
+
+        if (settings?.IsMultitenancy == true)
         {
             ApiSession.IsMultitenancy = true;
 
@@ -53,25 +54,18 @@ public class SessionMiddleware(RequestDelegate requestDelegate)
 
             if (!subdomain.ToIsNullOrEmpty() && (ApiSession.Tenant.ToIsNullOrEmpty() || ApiSession.Tenant.Subdomain.ToIsNotEqual(subdomain)))
             {
-                ApiSession.Tenant = settings.Tenants?.FirstOrDefault(tenant => tenant.IsActive && tenant.Subdomain?.ToLower() == subdomain);
-
+                ApiSession.Key = null;
                 ApiSession.IsAutenticated = false;
+                ApiSession.Tenant = settings.Tenants?.FirstOrDefault(x => x.IsActive && x.Subdomain?.ToLower() == subdomain);
             }
         }
 
-        if (!ApiSession.IsAutenticated)
+        if (!ApiSession.IsAutenticated && (httpContext.Request.ToHeader("Authorization")?
+                .Any(x => x?.StartsWith("Bearer ", StringComparison.InvariantCultureIgnoreCase) ?? false) ?? false))
         {
-            var hasAuthorization = httpContext.Request.ToHeader("Authorization")?
-                .Any(x => x?.StartsWith("Bearer ", StringComparison.InvariantCultureIgnoreCase) == true) == true;
-
-            if (hasAuthorization)
-            {
-                ApiSession.IsAutenticated = true;
-
-                ApiSession.Key = Guid.NewGuid().ToSecuencial().ToString();
-
-                ApiSession.User = httpContext.User.ToGet<UserSession>(ApiSession.UserClaimType).ToThrowIfNullOrEmpty();
-            }
+            ApiSession.Key = Guid.NewGuid().ToSecuencial().ToString();
+            ApiSession.IsAutenticated = true;
+            ApiSession.User = httpContext.User.ToGet<UserSession>(ApiSession.UserClaimType).ToThrowIfNullOrEmpty();
         }
 
         await RequestDelegate(httpContext).ConfigureAwait(false);

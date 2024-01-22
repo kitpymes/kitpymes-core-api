@@ -11,6 +11,7 @@ using System;
 using Kitpymes.Core.Api.ApiSession.Settings;
 using Kitpymes.Core.Shared.Extensions;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 /*
     Clase de extensión ApiSessionServiceCollectionExtensions
@@ -68,7 +69,7 @@ public static class ApiSessionServiceCollectionExtensions
             ApiSession.IsMultitenancy = sessionSettings.IsMultitenancy == true;
             ApiSession.IsDevelopment = services.ToIsDevelopment();
 
-            services.AddSingleton(sessionSettings);
+            services.TryAddSingleton(sessionSettings);
         }
 
         return services;
