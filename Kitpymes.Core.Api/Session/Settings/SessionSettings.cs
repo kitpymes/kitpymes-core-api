@@ -7,8 +7,6 @@
 
 namespace Kitpymes.Core.Api.ApiSession.Settings;
 
-using Kitpymes.Core.Shared.Extensions;
-using System;
 using System.Collections.Generic;
 
 /*
@@ -40,22 +38,9 @@ public class SessionSettings
     /// </summary>
     public const bool DefaultIsDevelopment = false;
 
-    /// <summary>
-    /// Valor por defecto que indica la clave de la sesión.
-    /// </summary>
-#pragma warning disable SA1401 // Fields should be private
-#pragma warning disable CA2211 // Los campos no constantes no deben ser visibles
-    public static string DefaultKey = Guid.NewGuid().ToSecuencial().ToString();
-#pragma warning restore CA2211 // Los campos no constantes no deben ser visibles
-#pragma warning restore SA1401 // Fields should be private
-
     private bool _enabled = DefaultEnabled;
 
     private bool _multitenancyEnabled = DefaultMultitenancyEnabled;
-
-    private string _key = DefaultKey;
-
-    private bool _isDevelopment = DefaultIsDevelopment;
 
     /// <summary>
     /// Obtiene o establece un valor que indica el servicio esta habilitado.
@@ -74,22 +59,6 @@ public class SessionSettings
     }
 
     /// <summary>
-    /// Obtiene o establece un valor que indica la key de la aplicación.
-    /// <para><strong>Default:</strong> <see cref="DefaultKey"/> = Guid.</para>
-    /// </summary>
-    public string? Key
-    {
-        get => _key;
-        set
-        {
-            if (!value.ToIsNullOrEmpty())
-            {
-                _key = value;
-            }
-        }
-    }
-
-    /// <summary>
     /// Obtiene o establece un valor que indica si la aplicación acepta inquilinos.
     /// <para><strong>Default:</strong> <see cref="DefaultMultitenancyEnabled"/> = false.</para>
     /// </summary>
@@ -101,22 +70,6 @@ public class SessionSettings
             if (value.HasValue)
             {
                 _multitenancyEnabled = value.Value;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Obtiene o establece un valor que indica si la aplicación acepta inquilinos.
-    /// <para><strong>Default:</strong> <see cref="DefaultIsDevelopment"/> = false.</para>
-    /// </summary>
-    public bool? IsDevelopment
-    {
-        get => _isDevelopment;
-        set
-        {
-            if (value.HasValue)
-            {
-                _isDevelopment = value.Value;
             }
         }
     }

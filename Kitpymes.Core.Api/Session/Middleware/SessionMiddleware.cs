@@ -51,7 +51,7 @@ public class SessionMiddleware(RequestDelegate requestDelegate)
 
             var subdomain = httpContext.Request.ToSubdomain();
 
-            if (!subdomain.ToIsNullOrEmpty() && (ApiSession.Tenant.ToIsNullOrEmpty() || !ApiSession.Tenant.Subdomain.ToIsEqual(subdomain)))
+            if (!subdomain.ToIsNullOrEmpty() && (ApiSession.Tenant.ToIsNullOrEmpty() || ApiSession.Tenant.Subdomain.ToIsNotEqual(subdomain)))
             {
                 ApiSession.Tenant = settings.Tenants?.FirstOrDefault(tenant => tenant.IsActive && tenant.Subdomain?.ToLower() == subdomain);
 

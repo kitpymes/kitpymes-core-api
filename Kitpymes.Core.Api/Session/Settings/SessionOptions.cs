@@ -44,34 +44,6 @@ public class SessionOptions
     }
 
     /// <summary>
-    /// Obtiene o establece un valor que indica la clave de la aplicación.
-    /// </summary>
-    /// <param name="key">Clave de la aplicación.</param>
-    /// <returns>SessionOptions.</returns>
-    public SessionOptions WithKey(string key)
-    {
-        SessionSettings ??= new SessionSettings();
-
-        SessionSettings.Key = key;
-
-        return this;
-    }
-
-    /// <summary>
-    /// Obtiene o establece un valor que indica el ambiente de ejecución.
-    /// </summary>
-    /// <param name="isDevelopment">Si es el ambiente de desarrollo.</param>
-    /// <returns>SessionOptions.</returns>
-    public SessionOptions WithIsDevelopment(bool isDevelopment = true)
-    {
-        SessionSettings ??= new SessionSettings();
-
-        SessionSettings.IsDevelopment = isDevelopment;
-
-        return this;
-    }
-
-    /// <summary>
     /// Obtiene o establece un valor que indica si la aplicación acepta inquilinos.
     /// </summary>
     /// <param name="isMultitenancy">Si es multi tenant.</param>

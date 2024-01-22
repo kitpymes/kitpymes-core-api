@@ -63,7 +63,7 @@ public class AuthorizationBearerFilter(IServiceProvider serviceProvider)
 
                             Type = settings.Security.SecurityType.ToEnum(SecuritySchemeType.ApiKey),
 
-                            Description = settings?.Security.Description,
+                            Description = settings.Security.Description,
 
                             Reference = new OpenApiReference
                             {
