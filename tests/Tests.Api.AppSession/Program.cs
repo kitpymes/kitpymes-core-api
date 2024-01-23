@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
-using YamlDotNet.Serialization.Schemas;
 
 var builder = WebApplication.CreateBuilder(args);
 
