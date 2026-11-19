@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+Ôªø// -----------------------------------------------------------------------
 // <copyright file="SpaBaseSettings.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -8,16 +8,16 @@
 namespace Kitpymes.Core.Api.Spa.Settings;
 
 /*
-  Clase de configuraciÛn SpaBaseSettings
-  Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina
+  Clase de configuraci√≥n SpaBaseSettings
+  Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina
 */
 
 /// <summary>
-/// Clase de configuraciÛn <c>SpaBaseSettings</c>.
-/// Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina.
+/// Clase de configuraci√≥n <c>SpaBaseSettings</c>.
+/// Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina.
 /// </summary>
 /// <remarks>
-/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p·gina.</para>
+/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p√°gina.</para>
 /// </remarks>
 public abstract class SpaBaseSettings
 {

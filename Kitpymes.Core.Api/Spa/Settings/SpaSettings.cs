@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+Ôªø// -----------------------------------------------------------------------
 // <copyright file="SpaSettings.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -10,16 +10,16 @@ namespace Kitpymes.Core.Api.Spa.Settings;
 using Kitpymes.Core.Api.Spa.Settings.Angular;
 
 /*
-  Clase de configuraciÛn SpaSettings
-  Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina
+  Clase de configuraci√≥n SpaSettings
+  Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina
 */
 
 /// <summary>
-/// Clase de configuraciÛn <c>SpaSettings</c>.
-/// Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina.
+/// Clase de configuraci√≥n <c>SpaSettings</c>.
+/// Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina.
 /// </summary>
 /// <remarks>
-/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p·gina.</para>
+/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p√°gina.</para>
 /// </remarks>
 public class SpaSettings
 {
@@ -47,7 +47,7 @@ public class SpaSettings
     }
 
     /// <summary>
-    /// Obtiene o establece la configuraciÛn de angular.
+    /// Obtiene o establece la configuraci√≥n de angular.
     /// </summary>
     public AngularSettings? AngularSettings { get; set; }
 }

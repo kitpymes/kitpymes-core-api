@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+ï»¿// -----------------------------------------------------------------------
 // <copyright file="SessionOptions.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -11,21 +11,21 @@ using Kitpymes.Core.Api.ApiSession;
 using System.Linq;
 
 /*
-   Clase de configuración SessionOptions
-   Contiene las propiedades para la configuración de la sesión
+   Clase de configuraciÃ³n SessionOptions
+   Contiene las propiedades para la configuraciÃ³n de la sesiÃ³n
 */
 
 /// <summary>
-/// Clase de configuración <c>SessionOptions</c>.
-/// Contiene las propiedades para la configuración de la sesión.
+/// Clase de configuraciÃ³n <c>SessionOptions</c>.
+/// Contiene las propiedades para la configuraciÃ³n de la sesiÃ³n.
 /// </summary>
 /// <remarks>
-/// <para>En esta clase se pueden agregar todas las propiedades para la configuración de la sesión.</para>
+/// <para>En esta clase se pueden agregar todas las propiedades para la configuraciÃ³n de la sesiÃ³n.</para>
 /// </remarks>
 public class SessionOptions
 {
     /// <summary>
-    /// Obtiene la configuración de la sesión.
+    /// Obtiene la configuraciÃ³n de la sesiÃ³n.
     /// </summary>
     public SessionSettings? SessionSettings { get; private set; }
 
@@ -44,7 +44,7 @@ public class SessionOptions
     }
 
     /// <summary>
-    /// Obtiene o establece un valor que indica si la aplicación acepta inquilinos.
+    /// Obtiene o establece un valor que indica si la aplicaciÃ³n acepta inquilinos.
     /// </summary>
     /// <param name="isMultitenancy">Si es multi tenant.</param>
     /// <returns>SessionOptions.</returns>
