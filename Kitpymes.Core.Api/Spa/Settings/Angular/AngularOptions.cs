@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+Ôªø// -----------------------------------------------------------------------
 // <copyright file="AngularOptions.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -8,13 +8,13 @@
 namespace Kitpymes.Core.Api.Spa.Settings.Angular;
 
 /*
-  Clase de configuraciÛn AngularSettings
-  Contiene las propiedades para la configuraciÛn de angular
+  Clase de configuraci√≥n AngularSettings
+  Contiene las propiedades para la configuraci√≥n de angular
 */
 
 /// <summary>
-/// Clase de configuraciÛn <c>AngularSettings</c>.
-/// Contiene las propiedades para la configuraciÛn de las applicaciones de angular.
+/// Clase de configuraci√≥n <c>AngularSettings</c>.
+/// Contiene las propiedades para la configuraci√≥n de las applicaciones de angular.
 /// </summary>
 /// <remarks>
 /// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de angular.</para>
@@ -22,7 +22,7 @@ namespace Kitpymes.Core.Api.Spa.Settings.Angular;
 public class AngularOptions
 {
     /// <summary>
-    /// Obtiene la configuraciÛn configuraciÛn de angular.
+    /// Obtiene la configuraci√≥n configuraci√≥n de angular.
     /// </summary>
     public AngularSettings AngularSettings { get; private set; } = new AngularSettings();
 
@@ -67,9 +67,9 @@ public class AngularOptions
     /// </summary>
     /// <param name="baseUri">Ruta base del inicio del servidor.</param>
     /// <returns>AngularOptions.</returns>
-#pragma warning disable CA1054 // Los par·metros de tipo URI no deben ser cadenas
+#pragma warning disable CA1054 // Los par√°metros de tipo URI no deben ser cadenas
     public AngularOptions WithBaseUri(string baseUri = SpaBaseSettings.DefaultBaseUri)
-#pragma warning restore CA1054 // Los par·metros de tipo URI no deben ser cadenas
+#pragma warning restore CA1054 // Los par√°metros de tipo URI no deben ser cadenas
     {
         AngularSettings.BaseUri = baseUri;
 

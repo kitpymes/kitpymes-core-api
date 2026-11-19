@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+Ôªø// -----------------------------------------------------------------------
 // <copyright file="SpaOptions.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -12,21 +12,21 @@ using Kitpymes.Core.Api.Spa.Settings.Angular;
 using Kitpymes.Core.Shared.Extensions;
 
 /*
-  Clase de configuraciÛn SpaOptions
-  Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina
+  Clase de configuraci√≥n SpaOptions
+  Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina
 */
 
 /// <summary>
-/// Clase de configuraciÛn <c>SpaOptions</c>.
-/// Contiene las propiedades para la configuraciÛn de las applicaciones de una sola p·gina.
+/// Clase de configuraci√≥n <c>SpaOptions</c>.
+/// Contiene las propiedades para la configuraci√≥n de las applicaciones de una sola p√°gina.
 /// </summary>
 /// <remarks>
-/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p·gina.</para>
+/// <para>En esta clase se pueden agregar todas las propiedades para las applicaciones de una sola p√°gina.</para>
 /// </remarks>
 public class SpaOptions
 {
     /// <summary>
-    /// Obtiene la configuraciÛn configuraciÛn de applicaciones de una sola p·gina.
+    /// Obtiene la configuraci√≥n configuraci√≥n de applicaciones de una sola p√°gina.
     /// </summary>
     public SpaSettings SpaSettings { get; private set; } = new SpaSettings();
 
@@ -43,9 +43,9 @@ public class SpaOptions
     }
 
     /// <summary>
-    /// Obtiene o establece un valor que indica la configuraciÛn de angular.
+    /// Obtiene o establece un valor que indica la configuraci√≥n de angular.
     /// </summary>
-    /// <param name="options">ConfiguraciÛn de angular.</param>
+    /// <param name="options">Configuraci√≥n de angular.</param>
     /// <returns>SpaOptions.</returns>
     public SpaOptions WithAngular(Action<AngularOptions> options)
     {
@@ -53,9 +53,9 @@ public class SpaOptions
     }
 
     /// <summary>
-    /// Obtiene o establece un valor que indica la configuraciÛn de angular.
+    /// Obtiene o establece un valor que indica la configuraci√≥n de angular.
     /// </summary>
-    /// <param name="settings">ConfiguraciÛn de angular.</param>
+    /// <param name="settings">Configuraci√≥n de angular.</param>
     /// <returns>SpaOptions.</returns>
     public SpaOptions WithAngular(AngularSettings settings)
     {

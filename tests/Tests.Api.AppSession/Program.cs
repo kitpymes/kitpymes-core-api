@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+锘縰sing Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
@@ -98,7 +98,7 @@ builder.Services
         };
     });
 
-/***  Configuraci髇 de la sesi髇  ***/
+/***  Configuraci贸n de la sesi贸n  ***/
 builder.Services.LoadSession(options => options
     .WithEnabled()
     .WithMultitenancy()
@@ -145,7 +145,7 @@ application.UseAuthorization();
 
 application.MapControllers();
 
-/***  Configuraci髇 de la sesi髇  ***/
+/***  Configuraci贸n de la sesi贸n  ***/
 application.LoadSession();
 
 await application.RunAsync();

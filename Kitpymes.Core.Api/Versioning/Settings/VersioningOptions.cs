@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+Ôªø// -----------------------------------------------------------------------
 // <copyright file="VersioningOptions.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -11,13 +11,13 @@ using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
 
 /*
-   Clase de configuraciÛn VersioningOptions
-   Contiene las propiedades para la configuraciÛn del versionado de la api
+   Clase de configuraci√≥n VersioningOptions
+   Contiene las propiedades para la configuraci√≥n del versionado de la api
 */
 
 /// <summary>
-/// Clase de configuraciÛn <c>VersioningOptions</c>.
-/// Contiene las propiedades para la configuraciÛn del versionado de la api.
+/// Clase de configuraci√≥n <c>VersioningOptions</c>.
+/// Contiene las propiedades para la configuraci√≥n del versionado de la api.
 /// </summary>
 /// <remarks>
 /// <para>En esta clase se pueden agregar todas las propiedades para la del versionado de la api.</para>
@@ -25,7 +25,7 @@ using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
 public class VersioningOptions
 {
     /// <summary>
-    /// Obtiene la configuraciÛn del versionado de la api.
+    /// Obtiene la configuraci√≥n del versionado de la api.
     /// </summary>
     public VersioningSettings ApiVersioningSettings { get; private set; } = new VersioningSettings();
 
@@ -42,10 +42,10 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica la versiÛn mayor de la api.
+    /// Indica la versi√≥n mayor de la api.
     /// <para><strong>Default:</strong> 1.</para>
     /// </summary>
-    /// <param name="version">Numero de versiÛn.</param>
+    /// <param name="version">Numero de versi√≥n.</param>
     /// <returns>ApiVersioningOptions.</returns>
     public VersioningOptions WithMajorVersion(int version = VersioningSettings.DefaultMajorVersion)
     {
@@ -55,10 +55,10 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica la versiÛn menor de la api.
+    /// Indica la versi√≥n menor de la api.
     /// <para><strong>Default:</strong> 0.</para>
     /// </summary>
-    /// <param name="version">Numero de versiÛn.</param>
+    /// <param name="version">Numero de versi√≥n.</param>
     /// <returns>ApiVersioningOptions.</returns>
     public VersioningOptions WithMinorVersion(int version = VersioningSettings.DefaultMinorVersion)
     {
@@ -68,7 +68,7 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica si se utiliza la versiÛn por defecto si no se especifica ninguna.
+    /// Indica si se utiliza la versi√≥n por defecto si no se especifica ninguna.
     /// <para><strong>Default:</strong> true.</para>
     /// </summary>
     /// <param name="assume">Si se asume o no.</param>
@@ -81,9 +81,9 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica si las solicitudes HTTP informan sobre el estado de la versiÛn de la API.
-    /// Los encabezados HTTP "api-supported-versions" y "api-deprecated-versions" se agregar·n a todas las rutas de servicio v·lidas.
-    /// Esta informaciÛn es ˙til para anunciar quÈ versiones son soportadas y cuales quedaron en desuso.
+    /// Indica si las solicitudes HTTP informan sobre el estado de la versi√≥n de la API.
+    /// Los encabezados HTTP "api-supported-versions" y "api-deprecated-versions" se agregar√°n a todas las rutas de servicio v√°lidas.
+    /// Esta informaci√≥n es √∫til para anunciar qu√© versiones son soportadas y cuales quedaron en desuso.
     /// <para><strong>Default:</strong> true.</para>
     /// </summary>
     /// <param name="report">Si se reporta el estado o no.</param>
@@ -96,7 +96,7 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica si el par·metro de versiÛn de API debe sustituirse en las plantillas de ruta.
+    /// Indica si el par√°metro de versi√≥n de API debe sustituirse en las plantillas de ruta.
     /// <para><strong>Default:</strong> true.</para>
     /// </summary>
     /// <param name="substitute">Si se debe sustituir o no.</param>
@@ -122,15 +122,15 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Indica el lector de la versiÛn de la API del servicio.
+    /// Indica el lector de la versi√≥n de la API del servicio.
     /// <list type="bullet">
     /// <item>
     /// <term>Microsoft.AspNetCore.Mvc.Versioning.QueryStringApiVersionReader</term>
-    /// <description>solo lee la versiÛn de la API del par·metro del query string "api-version"</description>
+    /// <description>solo lee la versi√≥n de la API del par√°metro del query string "api-version"</description>
     /// </item>
     /// <item>
     /// <term>Microsoft.AspNetCore.Mvc.Versioning.HeaderApiVersionReader</term>
-    /// <description>lee la versiÛn de la API a partir de informaciÛn adicional del encabezado HTTP.</description>
+    /// <description>lee la versi√≥n de la API a partir de informaci√≥n adicional del encabezado HTTP.</description>
     /// </item>
     /// <item>
     /// <term>Microsoft.AspNetCore.Mvc.Versioning.UrlSegmentApiVersionReader</term>
@@ -153,7 +153,7 @@ public class VersioningOptions
     }
 
     /// <summary>
-    /// Agrega la configuraciÛn de los endpoints de los controladores.
+    /// Agrega la configuraci√≥n de los endpoints de los controladores.
     /// <para><strong>Ejemplos:</strong></para>
     /// <para>var conventions = new ApiVersionConventionBuilder();.</para>
     /// <list type="number">
@@ -177,7 +177,7 @@ public class VersioningOptions
     /// </list>
     /// <para><strong>Default:</strong> null.</para>
     /// </summary>
-    /// <param name="conventions">ConfiguraciÛn.</param>
+    /// <param name="conventions">Configuraci√≥n.</param>
     /// <returns>ApiVersioningOptions.</returns>
     public VersioningOptions WithConventions(IApiVersionConventionBuilder conventions)
     {

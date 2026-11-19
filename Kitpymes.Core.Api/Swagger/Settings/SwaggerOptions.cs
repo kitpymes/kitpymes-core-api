@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+ï»¿// -----------------------------------------------------------------------
 // <copyright file="SwaggerOptions.cs" company="Kitpymes">
 // Copyright (c) Kitpymes. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project docs folder for full license information.
@@ -10,13 +10,13 @@ namespace Kitpymes.Core.Api.Swagger.Settings;
 using System.Reflection;
 
 /*
-   Clase de configuración SwaggerOptions
-   Contiene las propiedades para la configuración del versionado de la api
+   Clase de configuraciÃ³n SwaggerOptions
+   Contiene las propiedades para la configuraciÃ³n del versionado de la api
 */
 
 /// <summary>
-/// Clase de configuración <c>SwaggerOptions</c>.
-/// Contiene las propiedades para la configuración del versionado de la api.
+/// Clase de configuraciÃ³n <c>SwaggerOptions</c>.
+/// Contiene las propiedades para la configuraciÃ³n del versionado de la api.
 /// </summary>
 /// <remarks>
 /// <para>En esta clase se pueden agregar todas las propiedades para la del versionado de la api.</para>
@@ -24,7 +24,7 @@ using System.Reflection;
 public class SwaggerOptions
 {
     /// <summary>
-    /// Obtiene la configuración del versionado de la api.
+    /// Obtiene la configuraciÃ³n del versionado de la api.
     /// </summary>
     public SwaggerSettings SwaggerSettings { get; private set; } = new SwaggerSettings();
 
@@ -57,9 +57,9 @@ public class SwaggerOptions
     }
 
     /// <summary>
-    /// Indica la versión de la api.
+    /// Indica la versiÃ³n de la api.
     /// </summary>
-    /// <param name="version">Numero de versión.</param>
+    /// <param name="version">Numero de versiÃ³n.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithVersion(string version)
     {
@@ -71,7 +71,7 @@ public class SwaggerOptions
     /// <summary>
     /// Indica el titulo.
     /// </summary>
-    /// <param name="title">Título.</param>
+    /// <param name="title">TÃ­tulo.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithTitle(string title)
     {
@@ -81,9 +81,9 @@ public class SwaggerOptions
     }
 
     /// <summary>
-    /// Indica el descripción.
+    /// Indica el descripciÃ³n.
     /// </summary>
-    /// <param name="description">Descripción.</param>
+    /// <param name="description">DescripciÃ³n.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithDescription(string description)
     {
@@ -107,7 +107,7 @@ public class SwaggerOptions
     /// <summary>
     /// Indica los datos de contacto.
     /// </summary>
-    /// <param name="contact">Configuración de contacto.</param>
+    /// <param name="contact">ConfiguraciÃ³n de contacto.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithContact(ContactSettings contact)
     {
@@ -119,7 +119,7 @@ public class SwaggerOptions
     /// <summary>
     /// Indica los datos de licencia.
     /// </summary>
-    /// <param name="license">Configuración de licencia.</param>
+    /// <param name="license">ConfiguraciÃ³n de licencia.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithLicense(LicenseSettings license)
     {
@@ -131,7 +131,7 @@ public class SwaggerOptions
     /// <summary>
     /// Indica los datos de seguridad.
     /// </summary>
-    /// <param name="security">Configuración de seguridad.</param>
+    /// <param name="security">ConfiguraciÃ³n de seguridad.</param>
     /// <returns>SwaggerOptions.</returns>
     public SwaggerOptions WithSecurity(SwaggerSecuritySettings security)
     {
