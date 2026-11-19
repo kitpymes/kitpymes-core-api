@@ -1,21 +1,21 @@
-﻿# <img src="https://github.com/kitpymes/template-netcore-api/raw/master/docs/images/logo.png" height="30px"> Kitpymes.Core.Api
+﻿# <img src="https://github.com/kitpymes/kitpymes-core-api/raw/master/docs/images/logo.png" height="30px"> Kitpymes.Core.Api
 
 **Extensiones y herramientas comunes utilizadas por la Api**
 
-[![Build Status](https://github.com/kitpymes/template-netcore-api/workflows/Kitpymes.Core.Api/badge.svg)](https://github.com/kitpymes/template-netcore-api/actions)
+[![Build Status](https://github.com/kitpymes/kitpymes-core-api/actions/workflows/ci.yml/badge.svg)](https://github.com/kitpymes/kitpymes-core-api/actions/workflows/ci.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/Kitpymes.Core.Api)](https://www.nuget.org/packages/Kitpymes.Core.Api/)
 [![NuGet Download](https://img.shields.io/nuget/dt/Kitpymes.Core.Api)](https://www.nuget.org/stats/packages/Kitpymes.Core.Api?groupby=Version)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/kitpymes/template-netcore-api/blob/master/docs/LICENSE.txt)
-[![Size Repo](https://img.shields.io/github/repo-size/kitpymes/template-netcore-api)](https://github.com/kitpymes/template-netcore-api/)
-[![Last Commit](https://img.shields.io/github/last-commit/kitpymes/template-netcore-api)](https://github.com/kitpymes/template-netcore-api/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/kitpymes/kitpymes-core-api/blob/master/docs/LICENSE.txt)
+[![Size Repo](https://img.shields.io/github/repo-size/kitpymes/kitpymes-core-api)](https://github.com/kitpymes/kitpymes-core-api/)
+[![Last Commit](https://img.shields.io/github/last-commit/kitpymes/kitpymes-core-api)](https://github.com/kitpymes/kitpymes-core-api/)
 
 ## 📋 Requerimientos 
 
-* Visual Studio = 2022
+* Visual Studio 2026 o superior
 
-* NET TargetFramework = net8.0
+* NET TargetFramework = net10.0
 
-* Net Core SDK = 8.0.x
+* SDK de .NET = 10.0.x
 
 * C# = 12
 
