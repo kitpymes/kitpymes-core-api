@@ -12,7 +12,7 @@
         <Owners>Kitpymes</Owners>
         <Title>Kitpymes.Core.Api</Title>
         <Copyright>Copyright © $([System.DateTime]::Now.Year) by Kitpymes and Contributors. All rights reserved.</Copyright>
-        <Description>Extensiones y utilidades comunes compartidas en los proyectos.</Description>
+        <Description>Utilidades para APIs ASP.NET Core: sesión, versionado, Swagger y SPA.</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <PackageLicenseType>file</PackageLicenseType>
