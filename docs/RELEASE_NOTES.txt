@@ -1,3 +1,25 @@
+# v.2.0.0
+Versión mayor: rompe a quien venga de la 1.0.7 (la última publicada en NuGet, .NET 5). Abajo, qué cambia y cómo migrar.
+
+- Requiere .NET 10 o superior.
+- Usa las librerías Kitpymes ya migradas desde NuGet (Shared 2.0.1, Results 1.0.0, Entities 2.0.0, Logger 2.0.0); quien la use debe migrar también esas (ver sus release notes).
+- El código pasa a github.com/kitpymes/kitpymes-core-api y el paquete se publica desde GitHub Actions.
+
+## Cambios incompatibles y cómo migrar desde 1.0.7
+
+1. Espacios de nombres: antes todo estaba en Kitpymes.Core.Api. Ahora hay espacios por función: ApiSession, Session.Middleware, Spa (y Spa.Settings.Angular), Swagger (Extensions, Filters, Settings) y Versioning (Settings).
+
+2. Sesión de la aplicación
+   - AppSession -> ApiSession; DependencyInjectionSession -> ApiSessionServiceCollectionExtensions y ApiSessionApplicationBuilderExtensions.
+
+3. Versionado
+   - ApiVersioning* -> Versioning*: VersioningOptions, VersioningSettings, VersioningStatus, VersioningServiceCollectionExtensions y VersioningApplicationBuilderExtensions.
+
+4. Clases eliminadas
+   - InitHost (Build, Custom y RunAsync).
+   - AspNetResult.
+   - SecuritySettings -> SwaggerSecuritySettings (configuración de seguridad de Swagger).
+
 # v.1.0.7
 - Se actualiza la funcionalidad relacionada con la sesión de la aplicación.
 
