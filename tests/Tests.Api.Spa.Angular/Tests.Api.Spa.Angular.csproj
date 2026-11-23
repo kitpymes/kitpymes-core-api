@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)Kitpymes.Core.Api\Kitpymes.Core.Api.csproj" />
+    <ProjectReference Include="$(KitpymesRoot)Kitpymes.Core.Api\Kitpymes.Core.Api.csproj" />
   </ItemGroup>  
   
   <ItemGroup>
